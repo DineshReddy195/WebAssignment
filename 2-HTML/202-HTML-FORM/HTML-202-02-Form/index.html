@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form</title>
   </head>
   <body>
-    Start coding here
+    <fieldset>
+        <legend>Personal Details</legend>
+        <form>
+            <p>Salutation</p>
+            <select name="salutation">
+                <option selected>--None--</option>
+                <option>Mr</option>
+                <option>Mrs</option>
+            </select><br><br>
+            <label>First Name:</label>
+            <input type="text"><br><br>
+            <label>Last Name:</label>
+            <input type="text"><br><br>
+            <label>Gender</label>
+            <input type="radio">Male
+            <input type="radio">Female<br><br>
+            <label>Email:</label>
+            <input type="email"><br><br>
+            <label>Date Of Birth:</label>
+            <input type="date" name="birthdate"><br><br>
+            <label>Address:</label><br>
+            <textarea name="address" rows="3" columns="40"></textarea>
+        </form>
+    </fieldset>
   </body>
 </html>
