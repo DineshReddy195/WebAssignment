@@ -15,7 +15,7 @@ How to use this repository
 | ----- | ----- | --------------------------------------------------------- | ----------- |
 | 1     | GIT   | [COMMAND LINE](./0-Git/GIT-001-COMMANDLINE/ )            | NA          |
 | 2     | GIT   | [GIT-002-01](./0-Git/GIT-002-GIT-PRACTICE/)              |             |
-| 2     | GIT   | [GIT-002-02](./0-Git/GIT-002-GIT-PRACTICE/)              |  https://dineshreddy195.github.io/very-basic-resume/index.html           |
+| 2     | GIT   | [GIT-002-02](./0-Git/GIT-002-GIT-PRACTICE/)              |  https://dineshreddy195.github.io/very-basic-resume/index.html|
 
 # JS Basics
 

@@ -1,1 +1,68 @@
-/* start your styling here  */
+body{
+    margin: 15px;
+}
+.btn1{
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid green;
+    color: green;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: green;
+    color: white;
+}
+.btn2{
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: blue;
+    color: white;
+}
+.btn3{
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid orange;
+    color: orange;
+    cursor: pointer;
+}
+.btn3:hover{
+    background-color: orange;
+    color: white;
+}
+.btn4{
+    width: 70px;
+    height: 30px;
+    background-color:transparent;
+    outline: none;
+    border: 3px solid red;
+    color: red;
+    cursor: pointer;
+}
+.btn4:hover{
+    background-color: red;
+    color:white;
+}
+.btn5{
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid grey;
+    color: grey;
+    cursor: pointer;
+}
+.btn5:hover{
+    background-color: grey;
+    color: white;
+}
