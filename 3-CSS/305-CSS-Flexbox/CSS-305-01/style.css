@@ -1,1 +1,28 @@
-/* start your styling here  */
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+    opacity: 0.9;
+    border-bottom: 1px solid orange;
+    color: white;
+    height: 100px;
+}
+.cat{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.cat img{
+    border-radius: 10px;
+}
+.cats{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.cats img{
+    border-radius: 10px;
+}
