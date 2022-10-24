@@ -33,7 +33,7 @@ How to use this repository
 
 | 3     | HTML  | [HTML PHOTO CAT APP](./2-HTML/203-HTML-Photo-Cat-App/) HTML-203-01  |https://dineshreddy195.github.io/WebAssignment/2-HTML/203-HTML-Photo-Cat-App/HTML-203-01-CatApp/index.html
              |
-| 4     | HTML  | [HTML TRIBUTE PAGE](./2-HTML/204-HTML-TRIBUTE-PAGE/) HTML-204-01   |             |
+| 4     | HTML  | [HTML TRIBUTE PAGE](./2-HTML/204-HTML-TRIBUTE-PAGE/) HTML-204-01   | https://dineshreddy195.github.io/WebAssignment/2-HTML/204-HTML-TRIBUTE-PAGE/HTML-204-02-TributePage/index.html             |
 
 # CSS
 
