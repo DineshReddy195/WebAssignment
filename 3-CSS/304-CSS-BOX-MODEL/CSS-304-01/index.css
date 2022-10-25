@@ -1,1 +1,51 @@
-/* start your css here */
+body{
+    background-color: black;
+}
+.box1{
+    margin: 10px;
+    width: 800px;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: white;
+    padding-top: 30px;
+}
+.box2{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    background-color: brown;
+    width: 600px;
+    height: 595px;
+}
+.box3{
+    width: 500px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    background-color: burlywood;
+    border-radius: 20px;
+}
+.box4{
+    width: 590px;
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: red;
+    border-radius: 20px;
+}
+.box5{
+    width: 570px;
+    height: 180px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: maroon;
+    border-radius: 20px;
+}
