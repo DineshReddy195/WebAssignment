@@ -1,1 +1,22 @@
-/* start your css here */
+body{
+    margin: 0;
+}
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+
+}
+.navbar h5{
+    color: white;
+    font-weight: bold;
+}
+.navbar a{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar i{
+    color: white;
+}
