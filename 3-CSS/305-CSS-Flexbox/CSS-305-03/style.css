@@ -1,1 +1,77 @@
-/* start your styling here  */
+.container{
+    display: flex;
+}
+.sedans{
+    background-color: orange;
+    height: 500px;
+    width: 1700px;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 50px;
+    color: white;
+}
+.sedans h1{
+    padding-bottom: 40px;
+    padding-top: 100px;
+}
+.sedans .p1{
+    padding-bottom: 30px;
+    margin-right: 40px;
+}
+.suvs{
+    background-color: lightslategray;
+    height: 500px;
+    width: 1800px;
+    padding-left: 50px;
+    color: white;
+}
+.suvs h1{
+    padding-bottom: 40px;
+    padding-top: 100px;
+}
+.suvs .p2{
+    padding-bottom: 30px;
+    margin-right: 40px;
+}
+.luxury{
+    background-color: darkslategray;
+    height: 500px;
+    width: 1800px;
+    border-radius: 0px 20px 20px 0;
+    padding-left: 50px;
+    color: white;
+}
+.luxury h1{
+    padding-bottom: 40px;
+    padding-top: 100px; 
+}
+.luxury .p3{
+    padding-bottom: 50px;
+    margin-right: 40px;
+}
+.btn1{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: orange;
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: lightslategray;
+}
+.btn3{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: darkslategray;
+}
