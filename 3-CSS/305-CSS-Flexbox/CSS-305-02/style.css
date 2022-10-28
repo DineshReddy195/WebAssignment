@@ -1,1 +1,256 @@
-/* start your styling here  */
+.body{
+    margin: 30px;
+}
+.container{
+    background-color: darkslateblue;
+    width: 340px;
+    height: 340px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.main{
+    width: 270px;
+    height: 270px;
+    background-color: palevioletred;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.head{
+    display: flex;
+    padding-bottom: 20px;
+}
+.head .btn{
+    width: 40px;
+    height: 30px;
+    background-color: yellow;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px -4px yellow;
+}
+.s2{
+    padding-left: 20px;
+}
+.head .input{
+    width:200px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: darkslateblue;
+    color: white;
+}
+.head .input[type="text"]::placeholder{
+    padding-left: 180px;
+    color: white;
+}
+.num1{
+    display: flex;
+    padding-bottom: 20px;
+}
+ .btn1 .button1{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn1{
+    padding-right: 10px;
+}
+.btn2 .button2{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px black;
+}
+.btn2{
+    padding-right: 10px;
+}
+.btn3 .button3{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn3{
+    padding-right: 10px;
+}
+.btn4 .button4{
+    width: 55px;
+    height: 30px;
+    background-color: yellow;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px -4px yellow;
+}
+.btn4{
+    padding-right: 10px;
+}
+.num2{
+    display: flex;
+    padding-bottom: 20px;
+}
+.btn5 .button5{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn5{
+    padding-right: 10px;
+}
+.btn6 .button6{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn6{
+    padding-right: 10px;
+}
+.btn7 .button7{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn7{
+    padding-right: 10px;
+}
+.btn8 .button8{
+    width: 55px;
+    height: 30px;
+    background-color: yellow;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px -4px yellow;
+}
+.btn8{
+    padding-right: 10px;
+}
+.num3{
+    display: flex;
+    padding-bottom: 20px;
+}
+.btn9 .button9{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn9{
+    padding-right: 10px;
+}
+.btn10 .button10{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn10{
+    padding-right: 10px;
+}
+.btn11 .button11{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn11{
+    padding-right: 10px;
+}
+.btn12 .button12{
+    width: 55px;
+    height: 30px;
+    background-color: yellow;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px -4px yellow;
+}
+.btn12{
+    padding-right: 10;
+}
+.num4{
+    display: flex;
+    padding-bottom: 20px;
+}
+.btn13 .button13{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn13{
+    padding-right: 10px;
+}
+.btn14 .button14{
+    width: 55px;
+    height: 30px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  black;
+}
+.btn14{
+    padding-right: 10px;
+}
+.btn15 .button15{
+    width: 55px;
+    height: 30px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px  lightseagreen;
+}
+.btn15{
+    padding-right: 10px;
+}
+.btn16 .button16{
+    width: 55px;
+    height: 30px;
+    background-color: yellow;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px -4px yellow;
+}
+.btn16{
+    padding-right: 10;
+}
