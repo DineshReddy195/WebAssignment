@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+<style>
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 5px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">1st child</div>
+        <div class="boxes">2nd child</div>
+        <div class="boxes">3rd child</div>
+        <div class="boxes">4th child</div>
+        <div class="boxes">5th child</div>
+        <div class="boxes">6th child</div>
+        <div class="boxes">7th child</div>
+        <div class="boxes">8th child</div>
+        <div class="boxes">9th child</div>
+        <div class="boxes">10th child</div>
+        <div class="boxes">11th child</div>
+        <div class="boxes">12th child</div>
+        <div class="boxes">13th child</div>
+        <div class="boxes">14th child</div>
+        <div class="boxes">15th child</div>
+        <div class="boxes">16th child</div>
+        <div class="boxes">17th child</div>
+    </div>
+    <script>
+        var arr=document.getElementsByClassName("boxes");
+    for (index=0;index<arr.length;index++){
+        if(index==0){
+            arr[index].style.backgroundColor="blue";
+            arr[index].style.color="white";
+        }
+        else if(index==8){
+            arr[index].style.backgroundColor="green";
+            arr[index].style.color="white";
+        }
+        else if(index==16){
+            arr[index].style.backgroundColor="palevioletred";
+            arr[index].style.color="white";
+        }
+        else if(index%2==1){
+            arr[index].style.backgroundColor="lime";
+            arr[index].style.color="white";
+        }
+        else{
+            arr[index].style.backgroundColor="white";
+        }
+    }
+    </script>
+   </body>
 </html>
