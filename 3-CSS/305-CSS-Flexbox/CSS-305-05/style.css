@@ -1,1 +1,159 @@
-/* start your styling here  */
+.container{
+    display: flex;
+    background-color: aqua;
+    width: 800px;
+    height: 100%;
+}
+.menu{
+    padding-left: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+}
+.menu .info{
+    padding-left: 30px;
+}
+.menu .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.data{
+    line-height: 0;
+    font-weight: 900;
+    color: lightslategray;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.member{
+    line-height: 0;
+    color: grey;
+    padding-bottom: 30px;
+}
+.click{
+    list-style: none;
+    line-height: 30px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    color: grey;
+}
+.join{
+    font-weight: 800;
+    color: white;
+    background-color: cyan;
+    width: 150px;
+    height: 80px;
+    border-radius: 20px;
+}
+.join .games{
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.content{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.content .heading{
+    color: grey;
+    line-height: 0;
+    font-weight: 900;
+    font-size: 30px;
+}
+.content .p1{
+    border: 2px solid white;
+    width: 200px;
+    height: 15px;
+    line-height: 0;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.85;
+}
+.fa-book{
+    float: left;
+    margin-right: 20px;
+    bottom: 10px;
+    margin-top: 10px;
+}
+.fa-gamepad{
+    float: left;
+    margin-right: 20px;
+    bottom: 10px;
+    margin-top: 10px;
+}
+.fa-nfc-directional{
+    float: left;
+    margin-right: 20px;
+    bottom: 10px;
+    margin-top: 10px;
+}
+.fa-square-steam{
+    float: left;
+    margin-right: 20px;
+    bottom: 10px;
+    margin-top: 10px;
+}
+.box1{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    width: 450px;
+    border-radius: 20px;
+    padding-top: 15px;
+    color: grey;
+    background-color: lightblue;
+    margin-bottom: 20px;
+    box-shadow: 3px 5px 3px 3px;
+}
+.text{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 0;
+    padding-bottom: 5px;
+}
+.version{
+    line-height: 0;
+}
+.pic1{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+}
+.graph{
+    border: 2px solid white;
+    width: 200px;
+    height: 15px;
+    line-height: 0;
+    background-color: aqua;
+    border-radius: 20px;
+}
+.s3{
+    font-weight: 900;
+    font-weight: 18px;
+}
+.box2{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    width: 450px;
+    border-radius: 20px;
+    padding-top: 15px;
+    color: grey;
+    background-color: lightblue;
+    margin-bottom: 20px;
+    box-shadow: 3px 5px 3px 3px;
+}
+.box3{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    width: 450px;
+    border-radius: 20px;
+    padding-top: 15px;
+    color: grey;
+    background-color: lightblue;
+    box-shadow: 3px 5px 3px 3px;
+}
