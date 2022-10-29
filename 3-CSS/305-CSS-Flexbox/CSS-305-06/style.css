@@ -1,1 +1,106 @@
-/* start your styling here  */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .fa-compass{
+    padding-left: 20px;
+} */
+.navbar .discover{
+    margin-right: 10px;
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+}
+
+.navbar .people{
+    margin-right: 10px;
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+}
+.navbar .learning{
+    margin-right: 10px;
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+}
+.navbar .jobs{
+    margin-right: 10px;
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+}
+.navbar .line{
+    margin-right: 20px;
+    color: grey;
+}
+.navbar .submit{
+    background-color: transparent;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.navbar .btn{
+    background-color: transparent;
+    border:2px solid blue;
+    border-radius: 15px;
+    width: 70px;
+    height: 35px;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+}
+.main .content .desc{
+     font-size: 50px ;
+     font-family: 'Poppins', sans-serif;
+     letter-spacing: 3px;
+     color: brown;
+     line-height: 10px;
+}
+.main .content .s1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    color: brown;
+    line-height: 3px;
+}
+.main .content .mail{
+    width: 400px;
+    height: 35px;
+}
+.main .content .password{
+    width: 400px;
+    height: 35px;
+}
+.main .content .rules{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main .content .button{
+    background-color: blue;
+    width: 400px;
+    height: 45px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.main .content .foot{
+    text-align: center;
+    padding-right: 250px;
+}
+.main .content .foot .login{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900px;
+    cursor: pointer;
+}
