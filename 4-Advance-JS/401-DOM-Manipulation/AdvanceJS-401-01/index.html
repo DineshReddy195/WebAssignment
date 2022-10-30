@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .container{
+    padding-left: 450px;
+    padding-top: 300px;
+}
+#text{
+    border: 1px solid cyan;
+    height: 20px;
+    width: 300px;
+    outline: none;
+}
+#wrote{
+    padding-left: 45px;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <input type="text" id="text" placeholder="Enter Text Here">
+    <p id="wrote"></p>
+    </div>
+   </div>
+   <script>
+    const text=(e)=>{
+  const input=document.getElementById('wrote');
+  const value=(e.target.value);
+    input.innerHTML=value;
+}
+
+
+document.getElementById('text').addEventListener('input',text);
+   </script>
+</body>
 </html>
