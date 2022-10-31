@@ -1,1 +1,148 @@
-/* start your styling here  */
+body{
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palegoldenrod;
+    height: 60px;
+    z-index: 1;
+}
+.navbar .image{
+    padding-left: 30px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.navbar .artists{
+    padding-right: 25px;
+    font-weight: 600;
+}
+.navbar .artists:hover{
+    border-top: 2px solid green;
+    padding-top: 15px;
+    color: green;
+}
+.navbar .events{
+    padding-right: 25px;
+    font-weight: 600;
+}
+.navbar .events:hover{
+    border-top: 2px solid green;
+    padding-top: 15px;
+    color: green;
+}
+.navbar .dropdown{
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 0px;
+}
+.navbar .dropdown:hover{
+    border-top: 2px solid green;
+    padding-top: 15px;
+    color: green;
+}
+.navbar .book{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+}
+.navbar .book:hover{
+    border-top: 2px solid green;
+    padding-top: 15px;
+    color: green;
+}
+.navbar .shop{
+    padding-right: 25px;
+    font-weight: 600;
+}
+.navbar .shop:hover{
+    border-top: 2px solid green;
+    padding-top: 15px;
+    color: green;
+}
+.body{
+    display: flex;
+}
+.body h1{
+    padding-left: 100px;
+    padding-bottom: 25px;
+}
+.body .pic{
+    padding-right: 200px;
+    padding-bottom: 20px;
+}
+.body p{
+    margin-right: 120px;
+    margin-left: 100px;
+}
+.body.p1, .p2, .p3, .p4, .p5, .p6{
+    padding-bottom: 15px;
+}
+.body .p7{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.body a{
+    padding-left: 50px;
+    color: black;
+}
+.body i:hover{
+    color: blue;
+}
+.middle{
+    display: flex;
+    width: 849px;
+    height: 120px;
+    background-color: rgb(69,69,69);
+    padding-top: 150px;
+    padding-left: 500px;
+}
+.middle .button1{
+    padding-right: 20px;
+}
+.middle .btn1{
+    height: 35px;
+    border-radius: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 600;
+}
+.middle .btn2{
+    height: 35px;
+    border-radius: 10px;
+    width: 150px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 600;
+}
+.middle .btn1:hover{
+    color: rgba(128, 128, 128, 0.7);
+}
+.middle .btn2:hover{
+    color: rgba(128, 128, 128, 0.7);
+}
+.foot{
+    background-color: darkslategrey;
+    padding-top: 30px;
+    padding-left: 400px;
+    height: 200px;
+}
+.foot .footer{
+    padding-left: 200px;
+}
+.foot p{
+    color: white;
+}
+.foot .contact{
+    padding-left: 100px;
+}
