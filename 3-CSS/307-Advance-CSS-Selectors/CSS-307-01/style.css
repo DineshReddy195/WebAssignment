@@ -1,1 +1,235 @@
-/* start your styling here  */
+body{
+    margin-top: 30px;
+    padding: 0;
+}
+.container{
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: black;
+    width: 320px;
+    height: 280px;
+    border-radius: 15px;
+}
+.head .input{
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.head .btn{
+    width: 30px;
+    height: 35px;
+    background-color: red;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.num1{
+    display: flex;
+    padding-top: 20px;
+}
+.btn1 .button1{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn1{
+    padding-bottom: 20px;
+}
+.btn2 .button2{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn2{
+    padding-bottom: 20px;
+}
+.btn3 .button3{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn3{
+    padding-bottom: 20px;
+}
+.btn4 .button4{
+    width: 30px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn4{
+    padding-bottom: 20px;
+}
+.num2{
+    display: flex;
+}
+.btn5 .button5{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn5{
+    padding-bottom: 20px;
+}
+.btn6 .button6{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn6{
+    padding-bottom: 20px;
+}
+.btn7 .button7{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn7{
+    padding-bottom: 20px;
+}
+.btn8 .button8{
+    width: 30px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn8{
+    padding-bottom: 20px;
+}
+.num3{
+    display: flex;
+}
+.btn9 .button9{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn9{
+    padding-bottom: 20px;
+}
+.btn10 .button10{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn10{
+    padding-bottom: 20px;
+}
+.btn11 .button11{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn11{
+    padding-bottom: 20px;
+}
+.btn12 .button12{
+    width: 30px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn12{
+    padding-bottom: 20px;
+}
+.num4{
+    display: flex;
+}
+.btn13 .button13{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn13{
+    padding-bottom: 20px;
+}
+.btn14 .button14{
+    width: 90px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn14{
+    padding-bottom: 20px;
+}
+.btn15 .button15{
+    width: 90px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn15{
+    padding-bottom: 20px;
+}
+.btn16 .button16{
+    width: 30px;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btn16{
+    padding-bottom: 20px;
+}
