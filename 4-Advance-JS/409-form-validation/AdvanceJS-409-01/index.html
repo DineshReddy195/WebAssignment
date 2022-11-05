@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .container h2{
+            text-align: center;
+        }
+        span{
+            text-align: center;
+            padding-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Validating Web Forms</h2><br>
+        <form id="form">
+            <div id="firstname">
+                <h3>First Name</h3>
+                <input type="text" placeholder="Enter First Name" id="fname" class="form-control">
+                <span id="span1" class="text-warning fw-bold"></span>
+            </div><br>
+            <div id="lastname">
+                <h3>Last Name</h3>
+                <input type="text" placeholder="Enter Last Name" id="lname" class="form-control">
+                <span id="span2" class="text-warning fw-bold"></span>
+            </div><br>
+            <div id="email">
+                <h3>Email</h3>
+                <input type="text" placeholder="Enter Email" id="mail-id" class="form-control">
+                <span id="span3" class="text-warning fw-bold"></span>
+            </div><br>
+            <div id="password">
+                <h3>Password</h3>
+                <input type="password" placeholder="Enter Password" id="pw1" class="form-control">
+                <span id="span4" class="text-warning fw-bold"></span>
+            </div><br>
+            <div id="confirmpassword">
+                <h3>Confirm Password</h3>
+                <input type="password" placeholder="Confirm Password" id="cpw1" class="form-control">
+                <span id="span5" class="text-warning fw-bold"></span>
+            </div><br>
+            <div id="telephone">
+                <h3>Telephone</h3>
+                <input type="text" placeholder="Enter Phone number" id="phone-number" class="form-control">
+                <span id="span6" class="text-warning fw-bold"></span>
+            </div><br>
+            <div id="bio">
+                <h3>Your Bio</h3>
+                <input type="text" placeholder="Enter Your Bio" id="your-bio" class="form-control">
+                <span id="span7" class="text-warning fw-bold"></span>
+            </div><br>
+            <button id="button" class=" btn btn-primary mb-3">Submit</button>
+        </form>
+    </div>
+    <script>
+        function fn(e){
+            e.preventDefault();
+            var firstname=document.getElementById("fname").value;
+            var lastname=document.getElementById("lname").value;
+            var email=document.getElementById("mail-id").value;
+            var password=document.getElementById("pw1").value;
+            var confirmpassword=document.getElementById("cpw1").value;
+            var phone=document.getElementById("phone-number").value;
+            var bio=document.getElementById("your-bio").value;
+
+            var firstname_check=/^[A-Za-z0-9. ]{3,16}$/;
+            var lastname_check=/^[A-Za-z0-9. ]{3,16}$/;
+            var email_check=/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+            var password_check=/^(?=.*d)(?=.*[a-zA-Z]).{6,20}$/;
+            // var confirmpassword_check=/^(?=.*d)(?=.*[a-zA-Z]).{6,20}$/;
+            var phone_check=/^(?:(?:\+|0{0,2})91(\s*[\ -]\s*)?|[0]?)?[789]\d{9}|(\d[ -]?){10}\d$/;
+            var bio_check=/^[A-Za-z0-9. ]{10,}$/;
+
+            if(firstname_check.test(firstname)){
+                document.getElementById("span1").innerText="";
+            }
+            else{
+                document.getElementById("span1").innerText="First name must be alphanumeric and contain 3-16 characters";
+            }
+            if(lastname_check.test(lastname)){
+                document.getElementById("span2").innerText="";
+            }
+            else{
+                document.getElementById("span2").innerText="Last name must be alphanumeric and contain 3-16 characters";
+            }
+            if(email_check.test(email)){
+                document.getElementById("span3").innerText="";
+            }
+            else{
+                document.getElementById("span3").innerText="Email must be a valid address, e.g. example@example.com";
+                
+            }
+            if(password_check.test(password)){
+                document.getElementById("span4").innerText="";
+            }
+            else{
+                document.getElementById("span4").innerText="Password must be alphanumeric (@,_ and - are also allowed) and between 6-20 characters"
+            }
+            if (password===confirmpassword){
+                document.getElementById("span5").innerText="";
+            }
+            else{
+                document.getElementById("span5").innerText="Password and Confirm Password should be same"
+            }
+            if(phone_check.test(phone)){
+                document.getElementById("span6").innerText="";
+            }
+            else{
+                document.getElementById("span6").innerText="A valid telephone number(11 digits and 333-333-3334)";
+            }
+            if(bio_check.test(bio)){
+                document.getElementById("span7").innerText="";
+            }
+            else{
+                document.getElementById("span7").innerText=" Your Bio must be alphanumeric and contain more than 10 characters";
+            }
+
+        }
+        document.getElementById("form").addEventListener("keyup", fn);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 </html>
