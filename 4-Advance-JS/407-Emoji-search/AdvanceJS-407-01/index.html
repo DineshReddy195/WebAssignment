@@ -4,9 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Emoji Search</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+      #form{
+        padding-top: 25px;
+      }
+      /* #emojis,tr, td{
+        border: 0.1px solid gray;
+        border-collapse: collapse;
+      } */
+    </style>
   </head>
   <body>
-    Start your code here
+    <div class="container">
+      <h1>
+          Emojee - Emoji 🔍 Application
+      </h1>
+      <hr>
+      <form id="form">
+          <input type="text" placeholder="Search emoji" id="input">
+          <input type="submit" value="search">
+      </form><br><br>
+      <hr>
+      <table id="emojis">
+     
+          
+      </table>
+    </div>
+  <script src="EmojiList.js"></script>
+  <script >
+    const search = (e) =>{
+    const value=e.target.value;
+    displaySearchResults(value);
+} 
+const displaySearchResults=(searchQuery="")=>{
+    const filter=emojiList.filter(e=>{
+        if(e.description.indexOf(searchQuery)!==-1){
+            return true;
+        }
+        if(e.aliases.some(elem=>elem.startsWith(searchQuery))){
+            return true;
+        }
+
+    })
+    const table = document.getElementById("emojis");
+    table.innerHTML="";
+    filter.forEach((e)=>{
+        const new_row=document.createElement("tr");
+        const new_emoji=document.createElement("td");
+        new_emoji.style.width="10%";
+        const new_aliases=document.createElement("td");
+        new_aliases.style.borderBottom="0.1px solid gray";
+        // new_aliases.style.width="55%"
+        const new_desc=document.createElement("td");
+        new_emoji.innerHTML=e.emoji;
+        new_aliases.innerHTML=e.aliases.join(",");
+        new_desc.innerHTML=e.description;
+
+        new_row.appendChild(new_emoji);
+        new_row.appendChild(new_aliases);
+        new_row.appendChild(new_desc);
+        table.appendChild(new_row);
+       new_emoji.style.borderBottom="0.1px solid gray";
+       new_desc.style.borderBottom="0.1px solid gray";
+       new_desc.style.width="100%";
+
+      //  new_row.style.border="2px solid";
+
+    })
+}
+
+
+document.getElementById("form").addEventListener("keyup",search);
+
+displaySearchResults();
+  </script>
   </body>
 </html>
