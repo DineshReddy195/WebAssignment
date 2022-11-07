@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+      .container{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+      }
+      #keyboard{
+        height: 15px;
+        width: 200px;
+        border: 2px solid white;
+        box-shadow: 2px 2px 3px 3px grey;
+        color: black;
+        outline: none;
+      }
+      #keyclicked{
+        display: inline-block;
+        color: green;
+        font-size: 30px;
+        background-color: white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      #keyclicked{
+        display: flex;
+      }
+      #keycode{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+      }
+      #ans{
+        background-color: white;
+        box-shadow: 2px 2px 3px 3px grey;
+        width: 100px;
+        height: 120px;
+        color: green;
+        padding-top: 20px;
+        font-weight: 900;
+        font-size: 30px;
+      }
+      #key-text{
+        background-color: white;
+        box-shadow: 2px 2px 3px 3px grey;
+        width: 100px;
+        height: 30px;
+        color: green;
+        text-align: center;
+        padding: 45px;
+        /* padding-bottom: 15px; */
+        font-weight: 900;
+        font-size: 30px;
+      }
+      #key-pressed{
+        font-weight: 900;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px 3px grey;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        padding: 45px;
+        font-weight: 900;
+        font-size: 30px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">   
+        <div id="keyclicked">
+          <p id="key-pressed">You Pressed<input type="text" id="keyboard" placeholder="Press any key here"></p>     
+          <p id="key-text"></p>
+        </p>
+        </div>
+          <div id="keycode"><br><br><br><br><br>
+           <p id="ans"></p>
+         </div>
+         
+     </div>
+     <script>
+        const keyBoard = document.querySelector("#keyboard");
+
+keyBoard.addEventListener("keyup",(e)=>{
+   var key = document.getElementById("key-text");
+   var ans=document.getElementById('ans');
+    ans.innerHTML=e.keyCode;
+    key.innerHTML = e.key;
+});
+     </script> 
+</body>
 </html>
