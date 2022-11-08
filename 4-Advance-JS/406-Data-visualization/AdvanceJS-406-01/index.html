@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Start your code here
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7dbc7206c7.js" crossorigin="anonymous"></script>
+    <style>
+        div.container{
+    width: 100%;
+  height: 400px;
+  padding: 249px 82px;
+}
+input{
+    width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 150px;
+  line-height: 0;
+  }
+.container{
+    background-image: url("https://wallpaperaccess.com/full/3615993.jpg");
+    background-repeat: no-repeat;
+    /* width: 100%;
+    height: 100%; */
+    background-size: cover;
+}
+.buttons{
+    padding: 100px;
+    padding-left: 150px;
+}
+.buttons .btn{
+    padding: 7px 17px;
+  background-color: #7951cf;
+  color: white;
+  }
+  .buttons .btn:hover{
+    padding: 7px 17px;
+  background-color: #5e20e3;
+  color: white;
+  }
+  .main{
+    text-align: center;
+  margin: -100px auto;
+  }
+h1.data{
+        font-size: 40px;
+      word-spacing: 10px;
+      letter-spacing: 20px;
+      color: white;
+}
+h3.total{
+        color: white;
+}
+#table{
+    margin: 10px 200px;
+    color: black;
+    font-weight: 900;
+}
+#country{
+    font-size: 20px;
+    color: crimson;
+    color-interpolation-filters: linearRGB;
+}
+.starts{
+    color: white;
+    font-size: 15px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1 class="data">World Countries Data</h1>
+            <h3 class="total">Total number of countries: 193</h3>
+            <h2 class="starts">Country Starts with<span id="country"></span></h2>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-lg" onclick="fn1()">STARTING WORD</button>
+            <button class="btn btn-lg" onclick="fn2()">SEARCH WITH ANY WORD</button>
+            <button class="btn btn-ls"><i class="fa-solid fa-down-long">A-Z</i></button>
+        </div>
+        <div class="form">
+            <form id="search">
+                <input type="text" id="text" placeholder="Search Countries"><i style="width: 40px;
+                filter: invert(1);" class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div><br><br>
+        <table id="table" Rules="all">
+
+        </table>
+    </div>
+    <script src="countries.js"></script>
+    <script>
+        const result=(e)=>{
+    display(e.target.value);
+    var span=document.getElementById("country");
+    span.innerHTML=`${e.key} and ${e.keyCode}`;
+    span.style.opacity=1;
+    span.style.color="crimson";
+    span.style.font="40px";
+}
+function display(element){
+    const filter=countries.filter((value)=>{
+        if (value.startsWith(element)) {
+            return true;
+        }
+        return false;
+    });
+    const parent=document.getElementById("table");
+    parent.style.display="flex";
+    parent.style.flexDirection="column";
+    parent.style.gap="15px";
+    parent.innerHTML="";
+    filter.forEach(e => {
+        const row=document.createElement("tr");
+        const col=document.createElement("td");
+        col.innerHTML=e;
+        row.appendChild(col);
+        parent.appendChild(row);
+    });
+}
+function fn1() {
+    var form=document.getElementById("text");
+    form.value=""
+}
+function fn2() {
+    var form=document.getElementById("text");
+    form.value="";
+}
+document.getElementById("search").addEventListener("keydown",result);
+    </script>
+</body>
 </html>
