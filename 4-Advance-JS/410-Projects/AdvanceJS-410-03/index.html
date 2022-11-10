@@ -4,83 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meal Finder</title>
+    <title>410-03</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-body, h1, h2, h3, h4, h5, h6, p {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppins', sans-serif;
- }
-h1{
-    font-size: 40px;
+      @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,600;1,300;1,400&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: black;
+    color: white;
 }
- .container{
-    margin: 40px auto;
+.header{
     text-align: center;
- }
-
- input{
-    margin-top: 50px;
-    width: 500px;
-    font-size: 20px;
-    height: 25px;
- }
-input{
-    border: 2px solid aqua;
-}
- input:focus{
-    outline-color: aqua;
-    padding: 0px 10px;
- }
-
- #images{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 30px auto;
- }
- #images img{
-    width: 300px;
-    height: 300px;
- }
+  }
+  .header h1{
+    font-size:70px;
+  }
+  .header h4{
+    font-size:20px;
+    margin: -50px 1px;
+  }
+  form{
+    text-align: center;
+    margin-top: 70px;
+  }
+  input{
+    width: 400px;
+    height: 30px;
+    border: 3px solid rgb(14, 17, 17);
+    outline: none;
+  }
+  #search{
+    border-radius: 10px;
+    color: orangered;
+    font-weight: 900;
+    font-weight: 30px;
+  }
+  #img{
+    text-align: center;
+    margin-top: 30px;
+    
+  }
     </style>
   </head>
+ 
   <body>
-    <div class="container">
+    
+    <div class="header">
       <h1>Meal Finder</h1>
-      <p>Find the perfect meal to dine upon</p>
-      <input type="text" name="meal" id="meal" class="meal" />
-
-      <div id="images"></div>
+      <h4>Find the ferfect meal to the dine upon</h4>
     </div>
+    <form action="">
+      <input type="search" placeholder="find here " id="search">
+    </form>
 
+    <div id="img">
+      <img src="" alt="img" width="80px">
+    </div>
     <script>
-         document.getElementById("meal").addEventListener("keyup", renderData);
+      const form=document.querySelector("form");
+const search=document.getElementById("search");
+const img=document.getElementById("img")
 
-function renderData(e) {
-  fetch(
-    `https://www.themealdb.com/api/json/v1/1/search.php?s=${e.target.value}`
-  )
-    .then(convertToJSON)
-    .then(showData);
+const getName=async (data)=>{
+    const dataGet=await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${data}`)
+    const newData= await dataGet.json();
+    console.log(newData);
+    showData(newData)
 }
 
-function showData(data) {
-  document.getElementById("images").innerHTML = "";
-  console.log(data.meals);
-  data.meals.map((item) => {
-    let image = document.createElement("img");
-    image.src = item.strMealThumb;
-    document.getElementById("images").appendChild(image);
-  });
+const showData= async(newData)=>{
+   img.innerHTML=` <div id="img">
+   <img src="${newData.meals[0].strMealThumb}" alt="img" width="250px">
+ </div>`
+ search.value=""
 }
 
-function convertToJSON(response) {
-  return response.json();
-}
+form.addEventListener("submit",function(event){
+    var data=search.value;
+    console.log(data);
+    event.preventDefault()
+    getName(data);
+})
     </script>
   </body>
-</html>
