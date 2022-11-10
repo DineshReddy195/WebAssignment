@@ -4,9 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>410-01</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
   </head>
-  <body>
-    Start your code here
+  <style>
+    #h2{
+     margin: 1px 45%;
+    color: white;
+     
+    }
+    .main-content{
+      text-align: center;
+      margin-top: 50px;
+    }
+    #search{
+      width: 200px;
+    }
+    .link-name h4{
+      font-size: 20px;
+      margin: 20px;
+    }
+    #audi{
+      width: 20px;
+    }
+    #submit{
+      background-color: blue;
+      color: white;
+      border: none;
+      width: 60px;
+      height: 30px;
+    }
+  </style>
+ <body >
+      <nav class="navbar bg-primary ">
+        <h2 id="h2">Dictionary</h2>
+       
+      </nav>
+ <div class="main-content">
+    <h5>Find any word exist in the world</h5>
+   <div class="form" >
+    <form action="">
+      <input type="text" id="search" placeholder="search here">
+      <button id="submit">submit</button>
+    </form>
+   </div>
+   <div id="Profile">
+   
+   <div class="link-name">
+    <h4 ></h4>
+    
+   </div>
+    
+  </div>
+   <script>
+    var form=document.querySelector("form");
+var search=document.getElementById("search");
+
+var profile=document.getElementById("Profile");
+
+
+let getGithubId= async(name)=>{
+    const url=`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${name}?key=279d8350-7f34-425d-9328-0cbee72b302d`;
+    const response= await fetch (url);
+    const data=await response.json();
+    console.log(data);
+    showProfile(data)
+
+    
+}
+var showProfile= (data)=>{
+    if(data.message=="Not Found"){
+        profile.innerHTML=`<h2>Oops! Data not find</h2>`
+        return;
+}
+ profile.innerHTML=`<div id="Profile">
+   
+ <div class="link-name">
+  <h4 >${data[0].shortdef[0]}</h4>
+  <audio  id="audi" controls style="width:350px">
+  <source src="${data[0].hwi.prs[0].sound.audio}"type="" width="20px">
+ 
+  </audio>
+  
+ </div>`
+}
+
+
+form.addEventListener("submit",function(event){
+  console.log(search.value);
+  console.log("hhh");
+  getGithubId(search.value)
+ 
+  event.preventDefault();
+})
+   </script>
   </body>
 </html>
